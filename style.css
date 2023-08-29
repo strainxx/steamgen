@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+body {
+    background-color:rgb(31, 35, 39);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.gamebtn{
+    margin: 4vw;
+    background-color: coral;
+    font-family: 'Nunito', sans-serif;
+    font-size: larger;
+    border: none;
+    width: 40vw;
+    height: 9vh;
+    transition-duration: 0.5s;
+}
+
+.gamebtn:hover{
+    width: 50vw;
+    background-color: rgb(238, 85, 29);
+}
+
+#github{
+    position:absolute;
+    top: 3%;
+    right: 5%;
+    width: 40px;
+}

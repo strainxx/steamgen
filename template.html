@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game Gen</title>
-    <style>
-    body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
     </style>
   </head>
   <body>
   <h1>Generated steam games</h1>
-  <button onclick="location.href='GAME_1_LOCATION'">Game 1</button>
-  <button onclick="location.href='GAME_2_LOCATION'">Game 2</button>
-  <button onclick="location.href='GAME_3_LOCATION'">Game 3</button>
-  <button onclick="location.href='GAME_4_LOCATION'">Game 4</button>
-  <button onclick="location.href='GAME_5_LOCATION'">Game 5</button>
+  <button class="gamebtn" id="b1" onclick="window.open('GAME_1_LOCATION','_blank'); clicked('b1', 'GAME_1_NAME')">Game 1</button><br>
+  <button class="gamebtn" id="b2" onclick="window.open('GAME_2_LOCATION','_blank'); clicked('b2', 'GAME_2_NAME')">Game 2</button><br>
+  <button class="gamebtn" id="b3" onclick="window.open('GAME_3_LOCATION','_blank'); clicked('b3', 'GAME_3_NAME')">Game 3</button><br>
+  <button class="gamebtn" id="b4" onclick="window.open('GAME_4_LOCATION','_blank'); clicked('b4', 'GAME_4_NAME')">Game 4</button><br>
+  <button class="gamebtn" id="b5" onclick="window.open('GAME_5_LOCATION','_blank'); clicked('b5', 'GAME_5_NAME')">Game 5</button>
 
-  <samp><br><br><br><br>TODO:<br>Dlc and soundtrack detector<br>Good design<br>Deploy to site</samp>
-  </body>
+  <samp><br><br><br><br>TODO:<br>Dlc and soundtrack detector<br>Achievements detector<br>Deploy to site</samp>
+  <img id="github" onclick="window.open('https://github.com/strainxx/steamgen','_blank')" src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png"\>
+  <script>
+    function clicked(id, game){
+      document.getElementById(id).style.backgroundColor = 'lawngreen';
+      document.getElementById(id).textContent = game;
+    }
+  </script>  
+</body>
 </html>
