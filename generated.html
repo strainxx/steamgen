@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Gen</title>
+    <link rel="stylesheet" href="style.css">
+    </style>
+  </head>
+  <body>
+  <h1>Generated steam games</h1>
+  <button class="gamebtn" id="b1" onclick="window.open('https://store.steampowered.com/app/1036330/','_blank'); clicked('b1', 'BattleCubes: Arena on Steam')">Game 1</button><br>
+  <button class="gamebtn" id="b2" onclick="window.open('https://store.steampowered.com/app/416210/','_blank'); clicked('b2', 'Block'hood on Steam')">Game 2</button><br>
+  <button class="gamebtn" id="b3" onclick="window.open('https://store.steampowered.com/app/882700/','_blank'); clicked('b3', 'Thievery on Steam')">Game 3</button><br>
+  <button class="gamebtn" id="b4" onclick="window.open('https://store.steampowered.com/app/609067/','_blank'); clicked('b4', 'Gintama on Steam')">Game 4</button><br>
+  <button class="gamebtn" id="b5" onclick="window.open('https://store.steampowered.com/app/1003560/','_blank'); clicked('b5', 'Crumbling World on Steam')">Game 5</button>
+
+  <samp><br><br><br><br>TODO:<br>Dlc and soundtrack detector<br>Achievements detector<br>Deploy to site</samp>
+  <img id="github" onclick="window.open('https://github.com/strainxx/steamgen','_blank')" src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png"\>
+  <script>
+    function clicked(id, game){
+      document.getElementById(id).style.backgroundColor = 'lawngreen';
+      document.getElementById(id).textContent = game;
+    }
+  </script>  
+</body>
+</html>

@@ -7,7 +7,7 @@ import helper
 gamesCount = 1
 
 # some steam html classes
-isGameElement = "game_purchase_action"
+
 goodReviewElement = "game_review_summary positive"
 
 t1 = time.time()
@@ -28,7 +28,7 @@ while gamesCount <= urlCount:
     r = requests.get(url)
     rtext = r.text
     # print(r.text)
-    isGame = isGameElement in rtext
+    isGame = helper.detectGame(rtext) and not helper.detectDLC(rtext)
     title = rtext[rtext.find('<title>') + 7 : rtext.find('</title>')]
     print(title)
     if isGame:
